@@ -1,0 +1,227 @@
+@mixin footerBtn($bg, $width, $height) {
+  width: $width;
+  height: $height;
+  padding: 4px 10px;
+  gap: 10px;
+  border-radius: 12px 0px 0px 0px;
+  background-color: $bg;
+}
+
+.footer__container {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .footer-head {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-get-in-touch {
+    margin-right: 123px;
+
+    h6 {
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+      text-align: left;
+      color: #151515;
+      margin-bottom: 18px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      a {
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.07px;
+        text-align: left;
+
+        color: #6a983c;
+      }
+    }
+  }
+
+  .footer-connections {
+    margin-right: 128px;
+
+    h6 {
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+      text-align: left;
+
+      margin-bottom: 18px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      a {
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.07px;
+        text-align: left;
+
+        color: #6a983c;
+      }
+    }
+  }
+
+  .footer-earnings {
+    margin-right: 128px;
+
+    h6 {
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+      text-align: left;
+
+      margin-bottom: 18px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      a {
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.07px;
+        text-align: left;
+
+        color: #6a983c;
+      }
+    }
+  }
+
+  .footer-account {
+    h6 {
+      margin-right: 128px;
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+      text-align: left;
+
+      margin-bottom: 18px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    a {
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19.07px;
+      text-align: left;
+      transition: all 0.5s;
+      color: #6a983c;
+    }
+    a:hover {
+      cursor: pointer;
+      color: #151515;
+    }
+  }
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 83px;
+  h2{
+    font-family: 'Poppins';
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+text-align: left;
+margin-bottom: 16px;
+  }
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  button {
+    width: 58px;
+    height: 26px;
+    padding: 4px 10px;
+    gap: 10px;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    border: none;
+  }
+
+  .beans {
+    @include footerBtn(red, 58, 26);
+  }
+}
+
+.carrots {
+  @include footerBtn(red, 66, 26);
+}
+.apples {
+  @include footerBtn(red, 63, 26);
+}
+
+.garlic {
+  @include footerBtn(red, 57, 26);
+}
+
+.mushrooms {
+  @include footerBtn(red, 93, 26);
+}
+
+.chilli-peppers {
+  @include footerBtn(red, 104, 26);
+}
+
+.broccoli {
+  @include footerBtn(aqua, 69, 26);
+}
+
+.watermelons {
+  @include footerBtn(red, 103, 26);
+}
+
+.footer-end {
+  p {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.07px;
+    text-align: left;
+    color: #151515;
+  }
+}
+
+
+.oranges{
+  @include footerBtn(red,73 ,26 )
+}

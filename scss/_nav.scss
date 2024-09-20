@@ -1,0 +1,27 @@
+.nav {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.nav-button {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 1770px;
+    height: 55px;
+    padding: 16px 45px 16px 45px;
+    gap: 39px;
+    background-color: #f9f9f9;
+    p {
+        font-family: "Poppins";
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22.5px;
+        text-align: left;
+        color: #151515;
+    }
+    p:hover{
+        cursor: pointer;
+        color: red;
+    }
+}
