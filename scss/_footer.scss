@@ -1,25 +1,17 @@
-@mixin footerBtn($bg, $width, $height) {
-  width: $width;
-  height: $height;
-  padding: 4px 10px;
-  gap: 10px;
-  border-radius: 12px 0px 0px 0px;
-  background-color: $bg;
-}
 
-.footer__container {
+.article__container {
   padding-top: 80px;
   padding-bottom: 90px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 
-  .footer-head {
+  .article-head {
     display: flex;
     justify-content: center;
   }
 
-  .footer-get-in-touch {
+  .article-get-in-touch {
     margin-right: 123px;
 
     h6 {
@@ -49,7 +41,7 @@
     }
   }
 
-  .footer-connections {
+  .article-connections {
     margin-right: 128px;
 
     h6 {
@@ -79,7 +71,7 @@
     }
   }
 
-  .footer-earnings {
+  .article-earnings {
     margin-right: 128px;
 
     h6 {
@@ -109,7 +101,7 @@
     }
   }
 
-  .footer-account {
+  .article-account {
     h6 {
       margin-right: 128px;
       font-family: "Poppins";
@@ -143,84 +135,26 @@
   }
 }
 
-.footer-main {
+.footer__gray--items{
   display: flex;
-  margin-top: 83px;
-  h2{
-    font-family: 'Poppins';
-font-size: 18px;
-font-weight: 600;
-line-height: 27px;
-text-align: left;
-margin-bottom: 16px;
+}
+footer{
+  ul{
+      display: flex;
+      align-items: center;
+      flex-direction: wrap;
+      gap:16px;
+      a{
+          text-decoration: none;
+          color:#151515;
+      }
+      li {
+          background-color: gray;
+          padding: 4px 10px;
+          font-size: 12px;
+          font-weight: 600;
+          border-radius: 12px;    
+      }
+
   }
-}
-
-.footer-button {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  button {
-    width: 58px;
-    height: 26px;
-    padding: 4px 10px;
-    gap: 10px;
-    border-radius: 12px;
-    background-color: #f5f5f5;
-    font-family: "Poppins";
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    text-align: left;
-    border: none;
-  }
-
-  .beans {
-    @include footerBtn(red, 58, 26);
-  }
-}
-
-.carrots {
-  @include footerBtn(red, 66, 26);
-}
-.apples {
-  @include footerBtn(red, 63, 26);
-}
-
-.garlic {
-  @include footerBtn(red, 57, 26);
-}
-
-.mushrooms {
-  @include footerBtn(red, 93, 26);
-}
-
-.chilli-peppers {
-  @include footerBtn(red, 104, 26);
-}
-
-.broccoli {
-  @include footerBtn(aqua, 69, 26);
-}
-
-.watermelons {
-  @include footerBtn(red, 103, 26);
-}
-
-.footer-end {
-  p {
-    margin-top: 48px;
-    margin-bottom: 48px;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19.07px;
-    text-align: left;
-    color: #151515;
-  }
-}
-
-
-.oranges{
-  @include footerBtn(red,73 ,26 )
 }
