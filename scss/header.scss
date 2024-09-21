@@ -1,4 +1,4 @@
-@import "./global";
+@import "./global.scss";
 
 $C2: #6a983c;
 $C1: #151515;
@@ -35,7 +35,7 @@ $C1: #151515;
         text-align: left;
         color: $C1;
     }
-    a:hover{
+    a:hover {
         cursor: pointer;
     }
 }
